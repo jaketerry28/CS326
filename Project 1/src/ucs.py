@@ -55,7 +55,9 @@ def UCS(s0, goal, m, n, costs):
                         "generated_nodes": generated_nodes,
                         "max_frontier_size": max_frontier_size,
                         "runtime_ms": runtime_ms,
-                        "status": "success"
+                        "status": "success",
+                        "total_cost": node.g
+
                     })
         # 7: end if
 

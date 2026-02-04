@@ -53,7 +53,7 @@ def run_bfs(start, goal, m, n, costs, min_cost, max_cost, seed):
         "seed": seed,
         "path": [list(s) for s in states],
         "steps": len(actions),  # exclude initial None action
-        "total_cost": None,
+        "total_cost": total if metrics["status"] == "success" else None,
         "expanded_states": metrics["expanded_states"],
         "generated_nodes": metrics["generated_nodes"],
         "max_frontier_size": metrics["max_frontier_size"],
@@ -88,7 +88,7 @@ def run_dfs(start, goal, m, n, costs, min_cost, max_cost, seed):
         "seed": seed,
         "path": [list(s) for s in states],
         "steps": len(actions),  # exclude initial None action
-        "total_cost": None,
+        "total_cost": total if metrics["status"] == "success" else None,
         "expanded_states": metrics["expanded_states"],
         "generated_nodes": metrics["generated_nodes"],
         "max_frontier_size": metrics["max_frontier_size"],
