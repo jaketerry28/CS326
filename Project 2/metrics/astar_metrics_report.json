@@ -1,0 +1,249 @@
+{
+  "by_group": [
+    {
+      "m": 10,
+      "n": 10,
+      "algorithm": "astar",
+      "heuristic": "euclidean",
+      "num_runs": 10,
+      "num_success": 10,
+      "num_failure": 0,
+      "steps": {
+        "mean": 18.4,
+        "min": 18.0,
+        "max": 20.0,
+        "stdev": 0.8432740427115678
+      },
+      "total_cost": {
+        "mean": 56.6,
+        "min": 48.0,
+        "max": 72.0,
+        "stdev": 8.181279443542637
+      },
+      "expanded_states": {
+        "mean": 304.0,
+        "min": 237.0,
+        "max": 351.0,
+        "stdev": 42.80186911806539
+      },
+      "max_frontier_size": {
+        "mean": 78.8,
+        "min": 66.0,
+        "max": 95.0,
+        "stdev": 10.174041041351815
+      },
+      "runtime_ms": {
+        "mean": 0.40877999999793246,
+        "min": 0.3277000014350051,
+        "max": 0.5141000001458451,
+        "stdev": 0.05160686416956111
+      }
+    },
+    {
+      "m": 10,
+      "n": 10,
+      "algorithm": "astar",
+      "heuristic": "manhattan",
+      "num_runs": 10,
+      "num_success": 10,
+      "num_failure": 0,
+      "steps": {
+        "mean": 18.2,
+        "min": 18.0,
+        "max": 20.0,
+        "stdev": 0.6324555320336759
+      },
+      "total_cost": {
+        "mean": 56.6,
+        "min": 48.0,
+        "max": 72.0,
+        "stdev": 8.181279443542637
+      },
+      "expanded_states": {
+        "mean": 298.3,
+        "min": 216.0,
+        "max": 350.0,
+        "stdev": 48.82178475503191
+      },
+      "max_frontier_size": {
+        "mean": 85.6,
+        "min": 71.0,
+        "max": 102.0,
+        "stdev": 10.101705026600433
+      },
+      "runtime_ms": {
+        "mean": 0.3736800001206575,
+        "min": 0.2953000002889894,
+        "max": 0.4276999989087926,
+        "stdev": 0.03626209502768134
+      }
+    },
+    {
+      "m": 25,
+      "n": 25,
+      "algorithm": "astar",
+      "heuristic": "euclidean",
+      "num_runs": 10,
+      "num_success": 10,
+      "num_failure": 0,
+      "steps": {
+        "mean": 48.2,
+        "min": 48.0,
+        "max": 50.0,
+        "stdev": 0.6324555320336759
+      },
+      "total_cost": {
+        "mean": 134.3,
+        "min": 126.0,
+        "max": 152.0,
+        "stdev": 8.165646194746486
+      },
+      "expanded_states": {
+        "mean": 2355.6,
+        "min": 2292.0,
+        "max": 2391.0,
+        "stdev": 30.496630050621075
+      },
+      "max_frontier_size": {
+        "mean": 246.3,
+        "min": 214.0,
+        "max": 288.0,
+        "stdev": 23.527997506516925
+      },
+      "runtime_ms": {
+        "mean": 3.1425700004547252,
+        "min": 3.0065000009926734,
+        "max": 3.3745000000635628,
+        "stdev": 0.1343249545374776
+      }
+    },
+    {
+      "m": 25,
+      "n": 25,
+      "algorithm": "astar",
+      "heuristic": "manhattan",
+      "num_runs": 10,
+      "num_success": 10,
+      "num_failure": 0,
+      "steps": {
+        "mean": 48.2,
+        "min": 48.0,
+        "max": 50.0,
+        "stdev": 0.6324555320336759
+      },
+      "total_cost": {
+        "mean": 134.3,
+        "min": 126.0,
+        "max": 152.0,
+        "stdev": 8.165646194746486
+      },
+      "expanded_states": {
+        "mean": 2351.4,
+        "min": 2274.0,
+        "max": 2391.0,
+        "stdev": 35.6937591806249
+      },
+      "max_frontier_size": {
+        "mean": 291.0,
+        "min": 247.0,
+        "max": 334.0,
+        "stdev": 28.095076674273972
+      },
+      "runtime_ms": {
+        "mean": 2.8408800000761403,
+        "min": 2.747099999396596,
+        "max": 3.1500000004598405,
+        "stdev": 0.13034541997326968
+      }
+    },
+    {
+      "m": 50,
+      "n": 50,
+      "algorithm": "astar",
+      "heuristic": "euclidean",
+      "num_runs": 10,
+      "num_success": 10,
+      "num_failure": 0,
+      "steps": {
+        "mean": 99.4,
+        "min": 98.0,
+        "max": 100.0,
+        "stdev": 0.9660917830792959
+      },
+      "total_cost": {
+        "mean": 264.7,
+        "min": 248.0,
+        "max": 279.0,
+        "stdev": 11.21556458181615
+      },
+      "expanded_states": {
+        "mean": 9730.1,
+        "min": 9628.0,
+        "max": 9794.0,
+        "stdev": 61.1236451792594
+      },
+      "max_frontier_size": {
+        "mean": 529.6,
+        "min": 490.0,
+        "max": 571.0,
+        "stdev": 23.085348889140345
+      },
+      "runtime_ms": {
+        "mean": 13.613070000064909,
+        "min": 12.625299999854178,
+        "max": 14.8287000010896,
+        "stdev": 0.7751832130963289
+      }
+    },
+    {
+      "m": 50,
+      "n": 50,
+      "algorithm": "astar",
+      "heuristic": "manhattan",
+      "num_runs": 10,
+      "num_success": 10,
+      "num_failure": 0,
+      "steps": {
+        "mean": 99.4,
+        "min": 98.0,
+        "max": 100.0,
+        "stdev": 0.9660917830792959
+      },
+      "total_cost": {
+        "mean": 264.7,
+        "min": 248.0,
+        "max": 279.0,
+        "stdev": 11.21556458181615
+      },
+      "expanded_states": {
+        "mean": 9720.3,
+        "min": 9606.0,
+        "max": 9794.0,
+        "stdev": 71.72950733291162
+      },
+      "max_frontier_size": {
+        "mean": 642.7,
+        "min": 604.0,
+        "max": 680.0,
+        "stdev": 22.63257239761608
+      },
+      "runtime_ms": {
+        "mean": 12.503080000351474,
+        "min": 11.603200000536162,
+        "max": 15.210200001092744,
+        "stdev": 1.165064232820273
+      }
+    }
+  ],
+  "notes": {
+    "aggregation": "Stats computed over successful runs only. Success/failure counts are included per group.",
+    "grouping": "Grouped by (m,n,algorithm,heuristic) so Manhattan vs Euclidean can be compared.",
+    "metrics": [
+      "steps",
+      "total_cost",
+      "expanded_states",
+      "max_frontier_size",
+      "runtime_ms"
+    ]
+  }
+}

@@ -1,0 +1,344 @@
+{
+  "by_group": [
+    {
+      "n_cities": 20,
+      "algorithm": "tsp local search",
+      "operator": "two_opt",
+      "num_runs": 100,
+      "initial_cost": {
+        "mean": 1105.3342612156775,
+        "min": 858.4833473303697,
+        "max": 1332.152144460642,
+        "stdev": 102.1796984919926
+      },
+      "best_cost": {
+        "mean": 406.1232191991775,
+        "min": 362.2843628175001,
+        "max": 511.62290358891494,
+        "stdev": 37.91052359706343
+      },
+      "iterations": {
+        "mean": 14.98,
+        "min": 9.0,
+        "max": 21.0,
+        "stdev": 2.3005489024416006
+      },
+      "runtime_ms": {
+        "mean": 1.85,
+        "min": 1.0,
+        "max": 3.0,
+        "stdev": 0.41132945334843113
+      },
+      "improvement": {
+        "mean": 699.2110420165,
+        "min": 438.9757190709728,
+        "max": 943.506733719208,
+        "stdev": 108.49576713814288
+      }
+    },
+    {
+      "n_cities": 30,
+      "algorithm": "tsp local search",
+      "operator": "two_opt",
+      "num_runs": 100,
+      "initial_cost": {
+        "mean": 1601.0416035510966,
+        "min": 1317.0719853497078,
+        "max": 1863.3755748234287,
+        "stdev": 123.04369862466928
+      },
+      "best_cost": {
+        "mean": 493.03558406515504,
+        "min": 437.51896222519963,
+        "max": 561.3060513736423,
+        "stdev": 28.7594698608903
+      },
+      "iterations": {
+        "mean": 24.07,
+        "min": 19.0,
+        "max": 31.0,
+        "stdev": 2.629494708920789
+      },
+      "runtime_ms": {
+        "mean": 7.95,
+        "min": 6.0,
+        "max": 13.0,
+        "stdev": 1.2502524997500757
+      },
+      "improvement": {
+        "mean": 1108.0060194859416,
+        "min": 787.233658243607,
+        "max": 1376.858105898515,
+        "stdev": 124.00102330281359
+      }
+    },
+    {
+      "n_cities": 50,
+      "algorithm": "tsp local search",
+      "operator": "two_opt",
+      "num_runs": 100,
+      "initial_cost": {
+        "mean": 2606.9081898055256,
+        "min": 2062.5804636258194,
+        "max": 3178.1311042123134,
+        "stdev": 226.58814179999206
+      },
+      "best_cost": {
+        "mean": 618.3194460289019,
+        "min": 559.7489960769432,
+        "max": 702.7289431835433,
+        "stdev": 28.247015812972858
+      },
+      "iterations": {
+        "mean": 44.79,
+        "min": 36.0,
+        "max": 55.0,
+        "stdev": 3.456205077155222
+      },
+      "runtime_ms": {
+        "mean": 43.19,
+        "min": 34.0,
+        "max": 53.0,
+        "stdev": 3.34753037267171
+      },
+      "improvement": {
+        "mean": 1988.5887437766237,
+        "min": 1413.6418058093923,
+        "max": 2534.5446224714315,
+        "stdev": 224.75154732727896
+      }
+    }
+  ],
+  "by_seed": [
+    {
+      "n_cities": 20,
+      "operator": "two_opt",
+      "seed": 1,
+      "best_cost_across_restarts": 425.5658848798957
+    },
+    {
+      "n_cities": 20,
+      "operator": "two_opt",
+      "seed": 2,
+      "best_cost_across_restarts": 362.2843628175001
+    },
+    {
+      "n_cities": 20,
+      "operator": "two_opt",
+      "seed": 3,
+      "best_cost_across_restarts": 396.0273852567427
+    },
+    {
+      "n_cities": 20,
+      "operator": "two_opt",
+      "seed": 4,
+      "best_cost_across_restarts": 363.00719107757243
+    },
+    {
+      "n_cities": 20,
+      "operator": "two_opt",
+      "seed": 5,
+      "best_cost_across_restarts": 391.46874025163316
+    },
+    {
+      "n_cities": 20,
+      "operator": "two_opt",
+      "seed": 10,
+      "best_cost_across_restarts": 483.1512531593328
+    },
+    {
+      "n_cities": 20,
+      "operator": "two_opt",
+      "seed": 20,
+      "best_cost_across_restarts": 384.1251063573982
+    },
+    {
+      "n_cities": 20,
+      "operator": "two_opt",
+      "seed": 30,
+      "best_cost_across_restarts": 392.1903958939992
+    },
+    {
+      "n_cities": 20,
+      "operator": "two_opt",
+      "seed": 50,
+      "best_cost_across_restarts": 397.0713984220916
+    },
+    {
+      "n_cities": 20,
+      "operator": "two_opt",
+      "seed": 100,
+      "best_cost_across_restarts": 365.5666207657115
+    },
+    {
+      "n_cities": 30,
+      "operator": "two_opt",
+      "seed": 1,
+      "best_cost_across_restarts": 500.0123642242706
+    },
+    {
+      "n_cities": 30,
+      "operator": "two_opt",
+      "seed": 2,
+      "best_cost_across_restarts": 445.6133071985267
+    },
+    {
+      "n_cities": 30,
+      "operator": "two_opt",
+      "seed": 3,
+      "best_cost_across_restarts": 480.11887714711787
+    },
+    {
+      "n_cities": 30,
+      "operator": "two_opt",
+      "seed": 4,
+      "best_cost_across_restarts": 443.80768119708256
+    },
+    {
+      "n_cities": 30,
+      "operator": "two_opt",
+      "seed": 5,
+      "best_cost_across_restarts": 486.51746892491343
+    },
+    {
+      "n_cities": 30,
+      "operator": "two_opt",
+      "seed": 10,
+      "best_cost_across_restarts": 501.4012262935157
+    },
+    {
+      "n_cities": 30,
+      "operator": "two_opt",
+      "seed": 20,
+      "best_cost_across_restarts": 467.79325479678147
+    },
+    {
+      "n_cities": 30,
+      "operator": "two_opt",
+      "seed": 30,
+      "best_cost_across_restarts": 487.2753176014441
+    },
+    {
+      "n_cities": 30,
+      "operator": "two_opt",
+      "seed": 50,
+      "best_cost_across_restarts": 502.84669259691543
+    },
+    {
+      "n_cities": 30,
+      "operator": "two_opt",
+      "seed": 100,
+      "best_cost_across_restarts": 437.51896222519963
+    },
+    {
+      "n_cities": 50,
+      "operator": "two_opt",
+      "seed": 1,
+      "best_cost_across_restarts": 632.7864457603258
+    },
+    {
+      "n_cities": 50,
+      "operator": "two_opt",
+      "seed": 2,
+      "best_cost_across_restarts": 581.7588048088439
+    },
+    {
+      "n_cities": 50,
+      "operator": "two_opt",
+      "seed": 3,
+      "best_cost_across_restarts": 559.7489960769432
+    },
+    {
+      "n_cities": 50,
+      "operator": "two_opt",
+      "seed": 4,
+      "best_cost_across_restarts": 611.5839375681795
+    },
+    {
+      "n_cities": 50,
+      "operator": "two_opt",
+      "seed": 5,
+      "best_cost_across_restarts": 601.0295982632315
+    },
+    {
+      "n_cities": 50,
+      "operator": "two_opt",
+      "seed": 10,
+      "best_cost_across_restarts": 608.8207428355596
+    },
+    {
+      "n_cities": 50,
+      "operator": "two_opt",
+      "seed": 20,
+      "best_cost_across_restarts": 590.8671004195049
+    },
+    {
+      "n_cities": 50,
+      "operator": "two_opt",
+      "seed": 30,
+      "best_cost_across_restarts": 583.2388277442205
+    },
+    {
+      "n_cities": 50,
+      "operator": "two_opt",
+      "seed": 50,
+      "best_cost_across_restarts": 623.0742131642543
+    },
+    {
+      "n_cities": 50,
+      "operator": "two_opt",
+      "seed": 100,
+      "best_cost_across_restarts": 571.4923794398385
+    }
+  ],
+  "overall": {
+    "by_size_operator": [
+      {
+        "n_cities": 20,
+        "operator": "two_opt",
+        "num_seeds": 10,
+        "best_cost_across_restarts_per_seed": {
+          "mean": 396.04583388818776,
+          "min": 362.2843628175001,
+          "max": 483.1512531593328,
+          "stdev": 36.206397245143144
+        },
+        "overall_best_cost": 362.2843628175001
+      },
+      {
+        "n_cities": 30,
+        "operator": "two_opt",
+        "num_seeds": 10,
+        "best_cost_across_restarts_per_seed": {
+          "mean": 475.2905152205767,
+          "min": 437.51896222519963,
+          "max": 502.84669259691543,
+          "stdev": 25.166290643224663
+        },
+        "overall_best_cost": 437.51896222519963
+      },
+      {
+        "n_cities": 50,
+        "operator": "two_opt",
+        "num_seeds": 10,
+        "best_cost_across_restarts_per_seed": {
+          "mean": 596.4401046080902,
+          "min": 559.7489960769432,
+          "max": 632.7864457603258,
+          "stdev": 23.15073954187661
+        },
+        "overall_best_cost": 559.7489960769432
+      }
+    ]
+  },
+  "notes": {
+    "runs_definition": "Each run in results_tsp.json is ONE restart (one hill-climb to convergence).",
+    "grouping": "Grouped by (n_cities, algorithm, operator) for summary stats; per-seed best is computed as min(best_cost) across restarts for each seed.",
+    "required_metrics": [
+      "initial_cost vs best_cost (improvement)",
+      "iterations to converge",
+      "best tour cost across restarts (per seed and overall)",
+      "runtime_ms"
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+n_cities,algorithm,operator,num_runs,initial_cost_mean,best_cost_mean,improvement_mean,iterations_mean,runtime_ms_mean,overall_best_cost,best_cost_across_restarts_per_seed_mean
+20,tsp local search,two_opt,100,1105.3343,406.1232,699.2110,14.9800,1.8500,362.2844,396.0458
+30,tsp local search,two_opt,100,1601.0416,493.0356,1108.0060,24.0700,7.9500,437.5190,475.2905
+50,tsp local search,two_opt,100,2606.9082,618.3194,1988.5887,44.7900,43.1900,559.7490,596.4401

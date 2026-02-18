@@ -1,0 +1,7 @@
+m,n,algorithm,heuristic,num_runs,num_success,num_failure,steps_mean,total_cost_mean,expanded_states_mean,max_frontier_size_mean,runtime_ms_mean
+10,10,astar,euclidean,10,10,0,18.4000,56.6000,304.0000,78.8000,0.4088
+10,10,astar,manhattan,10,10,0,18.2000,56.6000,298.3000,85.6000,0.3737
+25,25,astar,euclidean,10,10,0,48.2000,134.3000,2355.6000,246.3000,3.1426
+25,25,astar,manhattan,10,10,0,48.2000,134.3000,2351.4000,291.0000,2.8409
+50,50,astar,euclidean,10,10,0,99.4000,264.7000,9730.1000,529.6000,13.6131
+50,50,astar,manhattan,10,10,0,99.4000,264.7000,9720.3000,642.7000,12.5031
