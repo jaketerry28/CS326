@@ -26,8 +26,9 @@ map_neighbors = {
 }
 
 
-def different_colors_constraint(region1, color1, region2, color2):
+def different_colors_constraint(region1: str, color1: str, region2: str, color2: str) -> bool:
     if region2 in map_neighbors[region1] and region2 != region1:
         return color1 != color2
     return True  # No constraint if not neighbors
+
 

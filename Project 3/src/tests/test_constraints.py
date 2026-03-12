@@ -23,25 +23,16 @@ def test_map_instance_different_colors_constraint():
 
 
 def test_sudoku_instance_constraints():
-    board = [["5","3",".",".","7",".",".",".","."],
-             ["6",".",".","1","9","5",".",".","."],
-             [".","9","8",".",".",".",".","6","."],
-             ["8",".",".",".","6",".",".",".","3"],
-             ["4",".",".","8",".","3",".",".","1"],
-             ["7",".",".",".","2",".",".",".","6"],
-             [".","6",".",".",".",".","2","8","."],
-             [".",".",".","4","1","9",".",".","5"],
-             [".",".",".",".","8",".",".","7","9"]]
-    
-    board2 = [["8","3",".",".","7",".",".",".","."],
-              ["6",".",".","1","9","5",".",".","."],
-              [".","9","8",".",".",".",".","6","."],
-              ["8",".",".",".","6",".",".",".","3"],
-              ["4",".",".","8",".","3",".",".","1"],
-              ["7",".",".",".","2",".",".",".","6"],
-              [".","6",".",".",".",".","2","8","."],
-              [".",".",".","4","1","9",".",".","5"],
-              [".",".",".",".","8",".",".","7","9"]]
-    
-    assert is_different_constraint(board)
-    assert not is_different_constraint(board2)
+    for cell1 in sudoku_variables:
+        for cell2 in sudoku_variables:
+            
+            if cell2 == cell1:
+                continue
+            
+            # neighbors conflict with same values
+            elif cell2 in sudoku_neighbors[cell1]:
+                assert not different_values_constraint(cell1, 5, cell2, 5)
+            
+            # not neighbhors so no conflict with same value
+            else:
+                assert different_values_constraint(cell1, 5, cell2, 5)

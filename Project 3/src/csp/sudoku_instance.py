@@ -10,39 +10,54 @@ Constraints: No row, column, or box can have duplicate values.
 
 """
 
-from typing import List
+from typing import Dict, List, Set, Tuple
 
 
 # There are 81 variables (cells) in a 9x9 Sudoku grid
 sudoku_variables = [(r, c) for r in range(9) for c in range(9)]
 
-# If a cell is blank: D(Xr,c) = {1, . . . , 9}
-# If a cell is pre-filled with k: D(Xr,c) = {k}.
-sudoku_domains = {(r,c): set(range(1, 10)) for r in range(9) for c in range(9)}
 
-
-# Constraints: No two variables in the same row, column, or box can have the same value.
-def is_different_constraint(board: List[List[str]]) -> bool:
-    # bit masking to check for duplicates in rows, columns, and 3x3 boxes
-    rows = [0] * 9
-    cols = [0] * 9
-    squares = [0] * 9
+def sudoku_domains(board: List[List[str]]) -> Dict[Tuple[int, int], Set[int]]:
+    domains = {}
 
     for r in range(9):
         for c in range(9):
             if board[r][c] == ".":
-                continue
+                domains[(r, c)] = set(range(1, 10))
+            else:
+                domains[(r, c)] = {int(board[r][c])}
 
-            val = int(board[r][c]) - 1
-            if (1 << val) & rows[r]:
-                return False
-            if (1 << val) & cols[c]:
-                return False
-            if (1 << val) & squares[(r // 3) * 3 + (c // 3)]:
-                return False
+    return domains
 
-            rows[r] |= (1 << val)
-            cols[c] |= (1 << val)
-            squares[(r // 3) * 3 + (c // 3)] |= (1 << val)
 
+
+def build_sudoku_neighbors():
+    neighbors = {}
+
+    for r in range(9):
+        for c in range(9):
+            cell = (r, c)
+
+            row = {(r, cc) for cc in range(9) if cc != c}
+            col = {(rr, c) for rr in range(9) if rr != r}
+
+            box_r, box_c = 3 * (r // 3), 3 * (c // 3)
+            box = {
+                (rr, cc)
+                for rr in range(box_r, box_r + 3)
+                for cc in range(box_c, box_c + 3)
+                if (rr, cc) != cell
+            }
+
+            neighbors[cell] = list(row | col | box)
+
+    return neighbors
+
+sudoku_neighbors = build_sudoku_neighbors()
+
+
+
+def different_values_constraint(cell1, val1, cell2, val2):
+    if cell2 in sudoku_neighbors[cell1]:
+        return val1 != val2
     return True
