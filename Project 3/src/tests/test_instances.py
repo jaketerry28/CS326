@@ -1,4 +1,4 @@
-# test_constraints.py
+# test_instances.py
 
 from csp.map_coloring_instance import*
 from csp.sudoku_instance import*

@@ -61,3 +61,5 @@ def different_values_constraint(cell1, val1, cell2, val2):
     if cell2 in sudoku_neighbors[cell1]:
         return val1 != val2
     return True
+
+

@@ -13,7 +13,7 @@ map_colors = ["Red", "Green", "Blue"]
 
 map_variables = ["WA", "NT", "SA", "Q", "NSW", "V", "T"]
 
-map_domains = {var: map_colors[:] for var in map_variables}
+map_domains = {var: set(map_colors) for var in map_variables}
 
 map_neighbors = {
     "WA": ["NT", "SA"],
