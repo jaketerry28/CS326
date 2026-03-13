@@ -1,0 +1,33 @@
+problem,instance,config,solved,runtime_ms,assignments_tried,backtracks
+map,australia,baseline,True,0.06279999979597051,7,0
+map,australia,mrv,True,0.08119999984046444,7,0
+map,australia,mrv fc,True,0.08349999916390516,7,0
+map,australia,mrv fc lcv,True,0.0928999997995561,7,0
+sudoku,easy_1,baseline,True,17.639300000155345,61,27
+sudoku,easy_1,mrv,True,56.07909999889671,2410,2376
+sudoku,easy_1,mrv fc,True,18.234099999972386,44,7
+sudoku,easy_1,mrv fc lcv,True,18.915099999503582,48,10
+sudoku,easy_2,baseline,True,39.56339999967895,2999,2954
+sudoku,easy_2,mrv,True,260.9385999985534,16865,16820
+sudoku,easy_2,mrv fc,True,17.208600000230945,51,5
+sudoku,easy_2,mrv fc lcv,True,18.493399998988025,51,5
+sudoku,medium_1,baseline,True,28.057800000169664,1469,1420
+sudoku,medium_1,mrv,True,3959.588600000643,257224,257175
+sudoku,medium_1,mrv fc,True,17.6551999993535,83,30
+sudoku,medium_1,mrv fc lcv,True,19.430399999691872,116,60
+sudoku,medium_2,baseline,True,20.40329999908863,701,654
+sudoku,medium_2,mrv,True,432.1517999997013,23336,23289
+sudoku,medium_2,mrv fc,True,17.08890000008978,132,78
+sudoku,medium_2,mrv fc lcv,True,16.463099998873076,81,32
+sudoku,hard_1,baseline,True,41.31919999963429,3360,3310
+sudoku,hard_1,mrv,True,3317.340300000069,171500,171450
+sudoku,hard_1,mrv fc,True,19.901800000297953,206,149
+sudoku,hard_1,mrv fc lcv,True,16.743899999710266,50,0
+sudoku,hard_2,baseline,True,41.65379999903962,3360,3310
+sudoku,hard_2,mrv,True,3331.971600000543,171500,171450
+sudoku,hard_2,mrv fc,True,20.24409999830823,206,149
+sudoku,hard_2,mrv fc lcv,True,16.91950000167708,50,0
+sudoku,extreme_1,baseline,True,769.0904999999475,87316,87261
+sudoku,extreme_1,mrv,True,4674.011799999789,270769,270714
+sudoku,extreme_1,mrv fc,True,17.80779999899096,140,78
+sudoku,extreme_1,mrv fc lcv,True,26.833200001419755,447,358
