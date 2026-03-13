@@ -105,12 +105,6 @@ python -m csp.run_csp --problem sudoku --instance hard_2 --config "mrv fc lcv"
 The project includes unit tests for the generic CSP engine as well as validation tests
 for the Sudoku and Map Coloring problem instances.
 
-To run all tests, use the following command from the `src` directory:
-
-```
-python -m pytest -q
-```
-
 **Generic CSP engine**
 - Constraint checking (`is_consistent`)
 - Assignment completion detection (`is_complete`)
@@ -135,7 +129,6 @@ python -m pytest -q
 ### Running the tests
 
 Run all tests using:
-
 
 ```
 python -m pytest -q
@@ -331,8 +324,6 @@ The public entry point for the solver.
 
 It resets counters, preloads already-fixed variables from singleton domains, optionally runs AC-3, and then launches recursive backtracking.
 
-### Why this design is good
-
 This file is reusable because it does not hardcode any problem-specific logic. The only requirement is that the caller provides:
 
 * the variable list,
@@ -389,8 +380,6 @@ Defines the Sudoku rule that neighboring cells must not share the same value.
 
 The generic solver calls this function whenever it needs to test compatibility.
 
-### Why this design is good
-
 This file contains **only Sudoku knowledge**. It does not know how search works; it only describes the puzzle structure. That keeps the system modular.
 
 ---
@@ -411,9 +400,6 @@ Each entry contains:
 
 * a puzzle `name`,
 * a 9×9 `board`.
-
-### Why this file matters
-
 This separation is important because puzzle data is not solver logic.
 
 Keeping boards outside the engine makes the project easier to:
@@ -456,8 +442,6 @@ If two regions share a border, they are neighbors and therefore cannot have the 
 #### `different_colors_constraint(region1, color1, region2, color2)`
 
 Defines the pairwise rule that adjacent regions must use different colors.
-
-### Why this design is good
 
 This file proves that the solver is truly generic.
 
@@ -506,9 +490,6 @@ For each configuration and each Sudoku puzzle, the file:
 3. calls `solve()`,
 4. validates the returned solution,
 5. prints the solved board.
-
-### Why this file matters
-
 This script is the integration point between problem data and the solver engine for Sudoku.
 
 ---
@@ -530,15 +511,6 @@ It:
 5. solves the instance,
 6. validates and prints the solution.
 
-### Important implementation detail
-
-The map domains are deep-copied before solving.
-
-That matters because the solver mutates domains during AC-3 and forward checking. Copying prevents one run from contaminating later runs.
-
-### Why this file matters
-
-This file demonstrates reuse of the exact same CSP engine on a completely different domain.
 
 ---
 
@@ -558,9 +530,6 @@ Then it decides which problem runner to call:
 
 * Sudoku runner for `--problem sudoku`
 * Map runner for `--problem map`
-
-### Why this is useful
-
 Without this file, users would have to manually run different scripts for each problem type.
 
 With this dispatcher, the system has one common entry point, which is better for:
@@ -643,22 +612,6 @@ Runs before search to enforce arc consistency across the network.
 This can shrink domains substantially before recursion begins.
 
 Together, these features make the solver much more efficient than plain brute-force search.
-
----
-
-## Data Mutation and State Management
-
-One of the most important design details in CSP systems is handling mutable domains safely.
-
-This project uses `deepcopy` when branching in backtracking. That means each recursive level works with its own domain state rather than corrupting shared state.
-
-That is crucial because:
-
-* forward checking removes values,
-* AC-3 can also shrink domains,
-* failed branches must not affect sibling branches.
-
-This choice makes the recursion safer and easier to reason about, even if it costs some extra memory.
 
 ---
 
