@@ -1,0 +1,1138 @@
+{
+  "problem": "tictactoe",
+  "instance": "scripted",
+  "config": "minimax",
+  "games": 5,
+  "wins": 5,
+  "draws": 0,
+  "losses": 0,
+  "avg_runtime_ms": 1346.913,
+  "avg_nodes_evaluated": 557487.0,
+  "results": [
+    {
+      "problem": "tictactoe",
+      "instance": "scripted",
+      "config": "minimax",
+      "result": "win",
+      "runtime_ms": 1375.846,
+      "nodes_evaluated": 557487,
+      "moves_taken": 7,
+      "trace": [
+        {
+          "step": 0,
+          "actor": "minimax",
+          "player": "X",
+          "move": [
+            0,
+            0
+          ],
+          "board": [
+            [
+              "X",
+              " ",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": 549946,
+          "score": 0
+        },
+        {
+          "step": 1,
+          "actor": "scripted",
+          "player": "O",
+          "move": [
+            1,
+            1
+          ],
+          "board": [
+            [
+              "X",
+              " ",
+              " "
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": null,
+          "score": null
+        },
+        {
+          "step": 2,
+          "actor": "minimax",
+          "player": "X",
+          "move": [
+            0,
+            1
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              " "
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": 7332,
+          "score": 0
+        },
+        {
+          "step": 3,
+          "actor": "scripted",
+          "player": "O",
+          "move": [
+            0,
+            2
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              "O"
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": null,
+          "score": null
+        },
+        {
+          "step": 4,
+          "actor": "minimax",
+          "player": "X",
+          "move": [
+            2,
+            0
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              "O"
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              "X",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": 198,
+          "score": 0
+        },
+        {
+          "step": 5,
+          "actor": "scripted",
+          "player": "O",
+          "move": [
+            2,
+            2
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              "O"
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              "X",
+              " ",
+              "O"
+            ]
+          ],
+          "nodes_evaluated": null,
+          "score": null
+        },
+        {
+          "step": 6,
+          "actor": "minimax",
+          "player": "X",
+          "move": [
+            1,
+            0
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              "O"
+            ],
+            [
+              "X",
+              "O",
+              " "
+            ],
+            [
+              "X",
+              " ",
+              "O"
+            ]
+          ],
+          "nodes_evaluated": 11,
+          "score": 1
+        }
+      ],
+      "winner": "X",
+      "final_board": [
+        [
+          "X",
+          "X",
+          "O"
+        ],
+        [
+          "X",
+          "O",
+          " "
+        ],
+        [
+          "X",
+          " ",
+          "O"
+        ]
+      ]
+    },
+    {
+      "problem": "tictactoe",
+      "instance": "scripted",
+      "config": "minimax",
+      "result": "win",
+      "runtime_ms": 1366.04,
+      "nodes_evaluated": 557487,
+      "moves_taken": 7,
+      "trace": [
+        {
+          "step": 0,
+          "actor": "minimax",
+          "player": "X",
+          "move": [
+            0,
+            0
+          ],
+          "board": [
+            [
+              "X",
+              " ",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": 549946,
+          "score": 0
+        },
+        {
+          "step": 1,
+          "actor": "scripted",
+          "player": "O",
+          "move": [
+            1,
+            1
+          ],
+          "board": [
+            [
+              "X",
+              " ",
+              " "
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": null,
+          "score": null
+        },
+        {
+          "step": 2,
+          "actor": "minimax",
+          "player": "X",
+          "move": [
+            0,
+            1
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              " "
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": 7332,
+          "score": 0
+        },
+        {
+          "step": 3,
+          "actor": "scripted",
+          "player": "O",
+          "move": [
+            0,
+            2
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              "O"
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": null,
+          "score": null
+        },
+        {
+          "step": 4,
+          "actor": "minimax",
+          "player": "X",
+          "move": [
+            2,
+            0
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              "O"
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              "X",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": 198,
+          "score": 0
+        },
+        {
+          "step": 5,
+          "actor": "scripted",
+          "player": "O",
+          "move": [
+            2,
+            2
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              "O"
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              "X",
+              " ",
+              "O"
+            ]
+          ],
+          "nodes_evaluated": null,
+          "score": null
+        },
+        {
+          "step": 6,
+          "actor": "minimax",
+          "player": "X",
+          "move": [
+            1,
+            0
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              "O"
+            ],
+            [
+              "X",
+              "O",
+              " "
+            ],
+            [
+              "X",
+              " ",
+              "O"
+            ]
+          ],
+          "nodes_evaluated": 11,
+          "score": 1
+        }
+      ],
+      "winner": "X",
+      "final_board": [
+        [
+          "X",
+          "X",
+          "O"
+        ],
+        [
+          "X",
+          "O",
+          " "
+        ],
+        [
+          "X",
+          " ",
+          "O"
+        ]
+      ]
+    },
+    {
+      "problem": "tictactoe",
+      "instance": "scripted",
+      "config": "minimax",
+      "result": "win",
+      "runtime_ms": 1286.57,
+      "nodes_evaluated": 557487,
+      "moves_taken": 7,
+      "trace": [
+        {
+          "step": 0,
+          "actor": "minimax",
+          "player": "X",
+          "move": [
+            0,
+            0
+          ],
+          "board": [
+            [
+              "X",
+              " ",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": 549946,
+          "score": 0
+        },
+        {
+          "step": 1,
+          "actor": "scripted",
+          "player": "O",
+          "move": [
+            1,
+            1
+          ],
+          "board": [
+            [
+              "X",
+              " ",
+              " "
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": null,
+          "score": null
+        },
+        {
+          "step": 2,
+          "actor": "minimax",
+          "player": "X",
+          "move": [
+            0,
+            1
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              " "
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": 7332,
+          "score": 0
+        },
+        {
+          "step": 3,
+          "actor": "scripted",
+          "player": "O",
+          "move": [
+            0,
+            2
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              "O"
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": null,
+          "score": null
+        },
+        {
+          "step": 4,
+          "actor": "minimax",
+          "player": "X",
+          "move": [
+            2,
+            0
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              "O"
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              "X",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": 198,
+          "score": 0
+        },
+        {
+          "step": 5,
+          "actor": "scripted",
+          "player": "O",
+          "move": [
+            2,
+            2
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              "O"
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              "X",
+              " ",
+              "O"
+            ]
+          ],
+          "nodes_evaluated": null,
+          "score": null
+        },
+        {
+          "step": 6,
+          "actor": "minimax",
+          "player": "X",
+          "move": [
+            1,
+            0
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              "O"
+            ],
+            [
+              "X",
+              "O",
+              " "
+            ],
+            [
+              "X",
+              " ",
+              "O"
+            ]
+          ],
+          "nodes_evaluated": 11,
+          "score": 1
+        }
+      ],
+      "winner": "X",
+      "final_board": [
+        [
+          "X",
+          "X",
+          "O"
+        ],
+        [
+          "X",
+          "O",
+          " "
+        ],
+        [
+          "X",
+          " ",
+          "O"
+        ]
+      ]
+    },
+    {
+      "problem": "tictactoe",
+      "instance": "scripted",
+      "config": "minimax",
+      "result": "win",
+      "runtime_ms": 1342.376,
+      "nodes_evaluated": 557487,
+      "moves_taken": 7,
+      "trace": [
+        {
+          "step": 0,
+          "actor": "minimax",
+          "player": "X",
+          "move": [
+            0,
+            0
+          ],
+          "board": [
+            [
+              "X",
+              " ",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": 549946,
+          "score": 0
+        },
+        {
+          "step": 1,
+          "actor": "scripted",
+          "player": "O",
+          "move": [
+            1,
+            1
+          ],
+          "board": [
+            [
+              "X",
+              " ",
+              " "
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": null,
+          "score": null
+        },
+        {
+          "step": 2,
+          "actor": "minimax",
+          "player": "X",
+          "move": [
+            0,
+            1
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              " "
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": 7332,
+          "score": 0
+        },
+        {
+          "step": 3,
+          "actor": "scripted",
+          "player": "O",
+          "move": [
+            0,
+            2
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              "O"
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": null,
+          "score": null
+        },
+        {
+          "step": 4,
+          "actor": "minimax",
+          "player": "X",
+          "move": [
+            2,
+            0
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              "O"
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              "X",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": 198,
+          "score": 0
+        },
+        {
+          "step": 5,
+          "actor": "scripted",
+          "player": "O",
+          "move": [
+            2,
+            2
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              "O"
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              "X",
+              " ",
+              "O"
+            ]
+          ],
+          "nodes_evaluated": null,
+          "score": null
+        },
+        {
+          "step": 6,
+          "actor": "minimax",
+          "player": "X",
+          "move": [
+            1,
+            0
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              "O"
+            ],
+            [
+              "X",
+              "O",
+              " "
+            ],
+            [
+              "X",
+              " ",
+              "O"
+            ]
+          ],
+          "nodes_evaluated": 11,
+          "score": 1
+        }
+      ],
+      "winner": "X",
+      "final_board": [
+        [
+          "X",
+          "X",
+          "O"
+        ],
+        [
+          "X",
+          "O",
+          " "
+        ],
+        [
+          "X",
+          " ",
+          "O"
+        ]
+      ]
+    },
+    {
+      "problem": "tictactoe",
+      "instance": "scripted",
+      "config": "minimax",
+      "result": "win",
+      "runtime_ms": 1363.733,
+      "nodes_evaluated": 557487,
+      "moves_taken": 7,
+      "trace": [
+        {
+          "step": 0,
+          "actor": "minimax",
+          "player": "X",
+          "move": [
+            0,
+            0
+          ],
+          "board": [
+            [
+              "X",
+              " ",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": 549946,
+          "score": 0
+        },
+        {
+          "step": 1,
+          "actor": "scripted",
+          "player": "O",
+          "move": [
+            1,
+            1
+          ],
+          "board": [
+            [
+              "X",
+              " ",
+              " "
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": null,
+          "score": null
+        },
+        {
+          "step": 2,
+          "actor": "minimax",
+          "player": "X",
+          "move": [
+            0,
+            1
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              " "
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": 7332,
+          "score": 0
+        },
+        {
+          "step": 3,
+          "actor": "scripted",
+          "player": "O",
+          "move": [
+            0,
+            2
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              "O"
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              " ",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": null,
+          "score": null
+        },
+        {
+          "step": 4,
+          "actor": "minimax",
+          "player": "X",
+          "move": [
+            2,
+            0
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              "O"
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              "X",
+              " ",
+              " "
+            ]
+          ],
+          "nodes_evaluated": 198,
+          "score": 0
+        },
+        {
+          "step": 5,
+          "actor": "scripted",
+          "player": "O",
+          "move": [
+            2,
+            2
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              "O"
+            ],
+            [
+              " ",
+              "O",
+              " "
+            ],
+            [
+              "X",
+              " ",
+              "O"
+            ]
+          ],
+          "nodes_evaluated": null,
+          "score": null
+        },
+        {
+          "step": 6,
+          "actor": "minimax",
+          "player": "X",
+          "move": [
+            1,
+            0
+          ],
+          "board": [
+            [
+              "X",
+              "X",
+              "O"
+            ],
+            [
+              "X",
+              "O",
+              " "
+            ],
+            [
+              "X",
+              " ",
+              "O"
+            ]
+          ],
+          "nodes_evaluated": 11,
+          "score": 1
+        }
+      ],
+      "winner": "X",
+      "final_board": [
+        [
+          "X",
+          "X",
+          "O"
+        ],
+        [
+          "X",
+          "O",
+          " "
+        ],
+        [
+          "X",
+          " ",
+          "O"
+        ]
+      ]
+    }
+  ]
+}
